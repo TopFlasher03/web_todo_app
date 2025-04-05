@@ -2,12 +2,12 @@ import streamlit as sl
 from streamlit import session_state
 
 def getTodos():
-    with open(r'/todos.txt', 'r') as file:
+    with open(r'todos.txt', 'r') as file:
         todos = file.readlines()
     return todos
 
 def writeTodos(todos):
-    with open(r'/todos.txt', 'w') as file:
+    with open(r'todos.txt', 'w') as file:
         file.writelines(todos)
 
 def addTodo():
